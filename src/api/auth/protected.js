@@ -15,6 +15,6 @@ module.exports = (req, res, next) => {
       }
     });
   } else {
-    res.status(401).json({ message: 'please provide creds' });
+    res.redirect('/api/auth/login');
   }
 };
